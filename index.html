@@ -4,15 +4,23 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">        
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
             <title>Index</title>
             <link rel="stylesheet" href="index.css">
             <style>
                 #header{
                     background-color: rosybrown;
+                    border: 5px;
+                    position: fixed;
+                    width: 100%;
+                
+        
+                
                 }
                 #footer{
                     background-color: rosybrown;
-                
+                    
+                   
                 }
                 #search{
                  background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
@@ -20,6 +28,10 @@
                  background-position: center;
                  background-repeat: no-repeat;
                  background-size: cover;
+                 justify-content: center;
+                 background-color: #f1f1f1;
+                 
+                 
 
                 }
                 .container{
@@ -37,20 +49,42 @@
                 img{
                     border-radius: 25%;
                 }
+                #login{
+                    text-align: right;
+                
+                    
+                }
+                #position{
+                    display: flex;
+                    
+                    justify-content: center;
+                    
+                    padding-top: 15%;
+                   
+                   
+                    
+                }
+                body{
+                    font-style: 'Ubuntu' , 'sans-serif';
+                }
             </style>
         </head>
     <body style="color: #e0e0e0; height:100vh; width:100vw; margin:0;">
         <div style="height:100vh; width:100vw; margin:0;">
             <div>
                 <header id="header">
-                    
-                    <span style="height:60px; width:60px;"><img src="assests/images/logo.png" alt="logo" height="60px" width="60px"/></span><br>
-                    <a href="login.html" style="text-align:right">Login</a>
+                    <div id="logo">
+                  <img src="assests/images/logo.png" alt="logo" height="60px" width="60px"/>
+                    </div><br>
+                   <div id="login">
+                       <a style="color: black; text-decoration: none;" href="login.html" style="text-align: right;">Login</a>
+                   </div>
                 
                 </header>
             </div>
-            <div id="search">
-                <form>
+            <div>
+            <div id="search" style="text-align: center;">
+                <form id="position">
                     <label for="city"></label>
                     <input type="text" placeholder="City"/>
                 </form>
@@ -62,19 +96,20 @@
 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="150px" width="150px"/>
 </div>
 <div>
-    <a href="index.html">View more>></a>
+    <a style="color: black; text-decoration: none; text-align: center;" href="index.html">View more>></a>
+</div>
 </div>
             <div>
                 <footer id="footer">
                 <div>
-                    <a href="contact.html">Contact Us</a>
+                    <a style="color: black; text-decoration: none;" href="contact.html">Contact Us</a>
                 </div>
-                <div id="footer">
+                <div style="text-align: right;">
                     <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" height="20px" width="22px"/></a>
                     <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" height="20px" width="22px"/></a>
                     <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" height="20px" width="22px"/></a>
                 </div>
-                <div>&copy; 2020 ROOM SEARCH PVT. LTD.</div>
+                <div style= "color: black; text-align: center;">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
                 </footer>
             </div>
         </div>
