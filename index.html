@@ -6,7 +6,11 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">        
             <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
             <title>Index</title>
-            <link rel="stylesheet" href="index.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/index.css">
             <style>
                 #header{
                     
@@ -22,7 +26,10 @@
                 #footer{
                     
                     background-color: rosybrown;
-                    
+                    position:fixed;
+                    left:0;
+                    bottom:0;
+                    width:100%
                    
                 }
                 #search{
@@ -71,6 +78,40 @@
                 body{
                     font-style: 'Ubuntu' , 'sans-serif';
                 }
+                .overlay {
+    position: absolute;
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+    text-align: center;
+    border-radius: 25%;
+    
+}
+.container:hover .overlay{ 
+  opacity: 1;
+}
+.overlay span {
+    position:relative;
+    top:45%;
+}
+#container2{
+    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-basis: auto;
+                    margin-left: 15%;
+                    margin-right: 15%;
+                    margin-bottom: 15%;
+                    margin-top: 15%;
+                    padding-top: 4%;
+                    padding-right: 4%;
+                    padding-left: 4%;
+                    padding-bottom: 4%;
+
+}
             </style>
         </head>
     <body style="color: #e0e0e0; height:100vh; width:100vw; margin:0;">
@@ -94,10 +135,38 @@
                 </form>
             </div>
             <div class="container">
-<a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="150px" width="150px"/></a>
+<a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="150px" width="150px"/> <div class='overlay'><span>Delhi</span></div></a>
+<div>
 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" height="150px" width="150px"/>
-<img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="150px" width="150px"/>
-<img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="150px" width="150px"/>
+<div class='overlay'><span>Goa</span></div>
+</div>
+<div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="150px" width="150px"/>
+    <div class='overlay'><span>Hyderabad</span></div>
+</div>
+<div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="150px" width="150px"/>
+    <div class='overlay'><span>Kolkata</span></div>
+</div>
+<div id="container2">
+    <div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" height="150px" width="150px" />
+    <div class='overlay'><span>Chennai</span></div>
+</div>
+<div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" height="150px" width="150px" />
+    <div class='overlay'><span>Agra</span></div>
+</div>
+<div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" height="150px" width="150px" />
+    <div class='overlay'><span>Jaipur</span></div>
+</div>
+<div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"  height="150px" width="150px" />
+    <div class='overlay'><span>Bengaluru</span></div>
+</div>
+</div>
+</div>
 </div>
 <div>
     <a style="color: black; text-decoration: none; text-align: center;" href="index.html">View more>></a>
